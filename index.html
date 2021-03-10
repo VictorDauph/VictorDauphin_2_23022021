@@ -2,14 +2,77 @@
 <html>
     <head>
             <meta charset="UTF-8" />
-            <title>Titre</title>
+            <title>Reservia</title>
             <link rel="stylesheet" href="style.css" />  <!--link fichier CSS-->
             <script src="https://kit.fontawesome.com/8466c28965.js" crossorigin="anonymous"></script> <!-- lien fontawesome pour les icônes-->
     </head>
     <body>
 
-        <i class="fas fa-money-bill-wave"></i>
-        <i class="fas fa-child"></i>
-Page…
+        
+        
+        
+        
+        <i class="fas fa-chart-line"></i>      <!-- icône chart-->
+        
+        <i class="fas fa-star"></i>             <!-- star full-->
+        <i class="far fa-star"></i>             <!-- star empty -->
+
+        <header>
+            <div id=Reservia> <img src="images/logo/Reservia.svg" alt='logo ReserviaS'></div>
+            <nav><a href="#"> Hébergements</a> <a href="#"> Activités</a>  </nav> <!-- Il faudra peut-être transformer ce menu en liste à puce. Propriété Hover en CSS-->
+            <div> <a href="#"> S'inscrire</a> </div>
+
+            <div id=subheader>
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
+                <div>
+                    <!-- icône GPS-->
+                    <i class="fas fa-map-marker-alt"></i> 
+                        <input type="text" value="Marseille, France">
+                        <a href='#'> Rechercher</a> <!--Rechercher est transformé en bouton dans le CSS-->
+
+                </div>
+            </div>
+        </header>
+
+
+        <section id=filtres> <!-- Flexboxer en colonnes-->
+            <div id=filtrespicto> <!-- Flexboxer en lignes--> <!-- utiliser .filtrespicto #bouton pour la mise en forme des boutons CSS-->
+                <div> <!--cette div est nécessaire pour le reponsive mobile-->
+                    <p>Filtres</p>
+                </div>
+                <div class=bouton>
+                    <i class="fas fa-money-bill-wave"></i> <!-- icône billet-->
+                    <p>Economique</p>
+
+                </div>
+                <div class=bouton>
+                    <i class="fas fa-child"></i>           <!-- icône child-->
+                    <p>Familial</p>
+
+                </div>
+                <div class=bouton>
+                    <i class="fas fa-heart"></i>           <!--icône coeur-->
+                    <p>Romantique</p>
+
+                </div>
+                <div class=bouton>
+                    <i class="fas fa-dog"></i>             <!-- icône chien-->
+                    <p>Animaux autorisés</p>
+
+                </div>
+                
+            </div>
+                <div id=filtresinfo>
+                    <i class="fas fa-info-circle"></i>      <!-- icône info-->
+                    <p> Plus de 500 logements disponibles dans cette ville</p>
+
+                </div>
+
+
+        </section>
     </body>
 </html>
+<!-- reprendre à la section corps-->

@@ -1,11 +1,13 @@
-
 @font-face {
-    font-family: 'Raleway';
-    src: url('fonts/Raleway-VariableFont_wght.ttf') format('ttf');}
+  font-family: "Raleway";
+  src: url("fonts/Raleway-VariableFont_wght.ttf") format("ttf");
+}
 
-    body {
-     
-        font-family: raleway,sans-serif;
-    
-        }
-    
+/* couleurs à utiliser en hexa
+    Bleu:           #0065FC
+    Bleu clair:     #DEEBFF
+    Gris:           #F2F2F2 */
+
+body {
+  font-family: raleway, sans-serif; /*appkication de la police raleway à tout le document */
+}
