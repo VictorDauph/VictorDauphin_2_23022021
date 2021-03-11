@@ -8,27 +8,25 @@
     </head>
     <body>
 
-
         <header>
             <div id=Reservia> <img src="images/logo/Reservia.svg" alt='logo Reservia'></div>
             <nav><a href="#"> Hébergements</a> <a href="#"> Activités</a>  </nav> <!-- Il faudra peut-être transformer ce menu en liste à puce. Propriété Hover en CSS-->
-            <div> <a href="#"> S'inscrire</a> </div>
+            <div> <a href="#"> <span>S'inscrire</span></a> </div>
 
             <div id=subheader>
                 <div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
-                <div>
+                <div id=zonerecherche>
                     <!-- icône GPS-->
-                    <i class="fas fa-map-marker-alt"></i> 
-                        <input type="text" value="Marseille, France">
-                        <a href='#'> Rechercher</a> <!--Rechercher est transformé en bouton dans le CSS-->
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="text" value="Marseille, France">
+                    <div><a href='#'> Rechercher</a> </div> <!--Rechercher est transformé en bouton dans le CSS-->
 
                 </div>
             </div>
         </header>
-
 
         <section id=filtres> <!-- Flexboxer en colonnes-->
             <div id=filtrespicto> <!-- Flexboxer en lignes--> <!-- utiliser .filtrespicto #bouton pour la mise en forme des boutons CSS-->
@@ -63,6 +61,7 @@
 
                 </div>
         </section>
+
         <div id=corps>
 
             <section id=hebergements>

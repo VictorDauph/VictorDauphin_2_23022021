@@ -8,20 +8,118 @@
     Bleu clair:     #DEEBFF
     Gris:           #F2F2F2 */
 
-body {
-  font-family: raleway, sans-serif; /*appkication de la police raleway à tout le document */
-
+body 
+{
+  font-family: raleway, sans-serif;  /*application de la police raleway à tout le document */
+  margin: 3%;
+  font-size: 1.4em;
 }
-a{
-  text-decoration:none; /* les liens sont non-soulignés et noirs par défaut */
+
+h1,h2 /* taille des titres*/
+{
+ font-size: 1.4em;
+}
+a /* les liens sont non-soulignés et noirs par défaut */
+{
+  text-decoration:none; 
   color: black;  
 }
 
-i /* Toutes les icônes sont en bleu (exception icône GPS à coder) */
+i /* Toutes les icônes sont en bleu (exception icône GPS) */
 {
-color:#0065FC;
+color: #0065FC;
+}
+
+/* style header */
+
+header
+{
+  display:flex;
+  flex-wrap: wrap; /* effectue le retour à la ligne pour le block subheader */
+  justify-content: space-between;
 
 }
+
+#Reservia
+{width:70%;/* on précise la largeur pour positionnement subheader */
+}
+
+nav /*disposition du texte menu de navigation */
+{
+  display: flex;
+  justify-content: space-around ;
+  width: 20%; /* on précise la largeur pour positionnement subheader */
+
+}
+
+nav a:hover /* couleur Hover du menu de navigation */
+{
+  color: #0065FC;
+}
+
+header span /* gras et couleur 's'inscrire' */
+{
+width:10%; /* on précise la largeur pour positionnement subheader */
+color: #0065FC ;
+font-weight: bold;
+
+}
+
+#subheader /* largeur box subheader */
+{
+  width: 100%;
+  
+}
+
+#subheader h1, #subheader p /* marges des textes subheader */
+{
+margin-bottom: 1px;
+margin-top: 0;
+}
+
+/* style zone de recherche subheader */
+
+
+
+#zonerecherche
+{ min-height: 50px;
+  font-size: 1.4em;
+  
+}
+
+#zonerecherche i /* couleur et taille de l'icône GPS */
+{
+color: black;
+background-color: #F2F2F2;
+width: 50px;
+height: 50px;
+text-align: center;
+padding: 0.5em;
+padding-top: 1em;
+border-radius: 30% 0% 0% 30%;
+
+
+}
+
+#zonerecherche input
+{
+width: 250px ;
+height: 90px;
+border: 3px solid red;
+font-size: 1em;
+}
+
+#zonerecherche a /*CA MERDE ICI! */
+{
+background-color: #0065FC;
+color: white;
+height: 50px;
+width:;
+font-size: 1em;
+padding: 1.5%;
+}
+
+
 
 #hebergements .box /* mise en forme des boxes hebergements */
 {
