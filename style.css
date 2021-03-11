@@ -10,4 +10,32 @@
 
 body {
   font-family: raleway, sans-serif; /*appkication de la police raleway à tout le document */
+
+}
+a{
+  text-decoration:none; /* les liens sont non-soulignés et noirs par défaut */
+  color: black;  
+}
+
+i /* Toutes les icônes sont en bleu (exception icône GPS à coder) */
+{
+color:#0065FC;
+
+}
+
+#hebergements .box /* mise en forme des boxes hebergements */
+{
+display: flexbox;
+width: 33%;
+height: 50%;
+display : block;
+background-color: white;
+
+
+
+}
+#hebergements .box img{
+width: 100%;
+height: 50%;
+
 }
