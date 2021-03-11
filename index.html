@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang='fr'>
     <head>
             <meta charset="UTF-8" />
             <title>Reservia</title>
@@ -18,7 +18,7 @@
         <i class="far fa-star"></i>             <!-- star empty -->
 
         <header>
-            <div id=Reservia> <img src="images/logo/Reservia.svg" alt='logo ReserviaS'></div>
+            <div id=Reservia> <img src="images/logo/Reservia.svg" alt='logo Reservia'></div>
             <nav><a href="#"> Hébergements</a> <a href="#"> Activités</a>  </nav> <!-- Il faudra peut-être transformer ce menu en liste à puce. Propriété Hover en CSS-->
             <div> <a href="#"> S'inscrire</a> </div>
 
@@ -41,7 +41,7 @@
         <section id=filtres> <!-- Flexboxer en colonnes-->
             <div id=filtrespicto> <!-- Flexboxer en lignes--> <!-- utiliser .filtrespicto #bouton pour la mise en forme des boutons CSS-->
                 <div> <!--cette div est nécessaire pour le reponsive mobile-->
-                    <p>Filtres</p>
+                    <h2>Filtres</h2>
                 </div>
                 <div class=bouton>
                     <i class="fas fa-money-bill-wave"></i> <!-- icône billet-->
@@ -70,88 +70,89 @@
                     <p> Plus de 500 logements disponibles dans cette ville</p>
 
                 </div>
-        
-        <section id=corps>
+        </section>
+        <div id=corps>
 
             <section id=hebergements>
-                <div> <h2> Hébergements à Marseille</h2></div> <!-- Cette div contient les 6 cartes hôtel... CSS-->
+                <h2> Hébergements à Marseille</h2> 
+                <div> <!-- Cette div contient les 6 cartes hôtel... CSS-->
                     <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img src='images/hebergements/4_small/cannebière.jpg'>
+                        <img src='images/hebergements/4_small/cannebière.jpg' alt='chambre'>
                         <h3> Auberge de la Cannebière</h3>
                         <p> Nuit à partir de <strong>25€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img src='images/hebergements/4_small/hotelport.jpg'>
+                        <img src='images/hebergements/4_small/hotelport.jpg' alt='chambre'>
                         <h3> Hôtel du Port</h3>
                         <p> Nuit à partir de <strong>52€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                          <!-- star empty -->
                     </a>
                     <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img src='images/hebergements/4_small/hotelmouettes.jpg'>
+                        <img src='images/hebergements/4_small/hotelmouettes.jpg' alt='chambre'>
                         <h3> Hôtel Les Mouettes</h3>
                         <p> Nuit à partir de <strong>76€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img src='images/hebergements/4_small/hotelmer.jpg'>
+                        <img src='images/hebergements/4_small/hotelmer.jpg' alt='chambre'>
                         <h3> Hôtel de la mer</h3>
                         <p> Nuit à partir de <strong>46€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i><i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img src='images/hebergements/4_small/aubergepanier.jpg'>
+                        <img src='images/hebergements/4_small/aubergepanier.jpg' alt='chambre'>
                         <h3> Auberge Le Panier</h3>
                         <p> Nuit à partir de <strong>23€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img src='images/hebergements/4_small/cannebière.jpg'>
+                        <img src='images/hebergements/4_small/cannebière.jpg' alt='chambre'>
                         <h3> Hôtel chez Amina</h3>
                         <p> Nuit à partir de <strong>96€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                     </a>
-
+                </div>
                     <div> <a href='#'>Afficher plus </a></div> <!-- Div Titre et picto-->
 
             </section>
             <section id=trend>
                 <div id=trendtitle> <h2> Les plus populaires</h2> <i class="fas fa-chart-line"></i>      <!-- icône chart--></div>
 
-            </section>
+            
             
             
             <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                <img src='images/hebergements/4_small/soleilmatin.jpg'>
+                <img src='images/hebergements/4_small/soleilmatin.jpg' alt='chambre'>
                 <h3> Hôtel Le soleil du matin</h3>
                 <p> Nuit à partir de <strong>128€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
             </a>
             <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                <img src='images/hebergements/4_small/coeureau.jpg'>
+                <img src='images/hebergements/4_small/coeureau.jpg' alt='chambre'>
                 <h3> Chambres d'hôtes</h3>
                 <p> Nuit à partir de <strong>71€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                 <i class="far fa-star"></i> <!-- star empty -->
             </a>
             <a href=# class=box> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                <img src='images/hebergements/4_small/toutbleu.jpg'>
+                <img src='images/hebergements/4_small/toutbleu.jpg' alt='chambre'>
                 <h3> Hôtel Tout bleu et Blanc</h3>
                 <p> Nuit à partir de <strong>68€</strong></p>
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                 <i class="far fa-star"></i> <!-- star empty -->
             </a>
 
+            </section>
+        </div>
 
-        </section>
 
-
-        </section>
+        
     </body>
 </html>
 
