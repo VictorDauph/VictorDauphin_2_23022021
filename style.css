@@ -206,8 +206,67 @@ display: flex;
 align-items: center;
 }
 
-#filtresinfo p
+#filtresinfo p /* espacement éléments filtresinfo */
 {
 margin-left: 0.5em;
+
+}
+
+#corps /* flexer la div qui gère le corps de la page */
+{
+display: flex;
+}
+
+#hebergements
+{
+background-color: #F2F2F2;
+border-radius: 3%;
+
+}
+#hebergements h2
+{
+margin: 2% 0 0 5%;
+
+}
+
+#cadrebox /* disposition des boxes dans section hébergements */
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 2%;
+
+}
+
+#hebergements .box /* style et marges des box */
+{
+
+background-color: white;
+width: 30%;
+border-radius: 5%;
+margin: 0px 0 2% 2%;
+}
+
+#hebergements .box h3, #hebergements .box p /*marge des textes dans les box */
+{
+  margin-left: 20px;
+}
+
+#hebergements .box i /*position des étoiles dans les box*/
+{
+position: relative; 
+left: 20px; bottom: 10px;
+
+}
+
+.imagebox /*positionnement et recadrage des photos hebergments*/
+{
+  background-size: cover;/*les photos sont des background de divs */
+  position: relative;
+  top: 10px; left: 5%;
+  width: 90%;
+  height: 150px;
+  border-radius: 5%;
+  
 
 }
