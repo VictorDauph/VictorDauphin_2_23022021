@@ -58,6 +58,7 @@ header
 
 
 nav /*disposition du texte menu de navigation */
+/* /!\ les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page. */
 {
   display: flex;
   justify-content: space-around ;
@@ -96,7 +97,9 @@ margin-top: 0;
 
 
 
-#zonerecherche /* style de la zone d'entrée du filtre: zonerecherche */
+#zonerecherche /* style de la zone d'entrée du filtre: zonerecherche*/ 
+
+/* /!\ Les filtres doivent changer d'apparence au survol! /!\*/
 { 
   font-size: 1.4em;
   display: flex;
@@ -141,7 +144,6 @@ align-items: center;
 
 #hebergements .box /* mise en forme des boxes hebergements */
 {
-display: flexbox;
 width: 33%;
 height: 50%;
 display : block;
