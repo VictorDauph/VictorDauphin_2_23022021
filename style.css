@@ -267,7 +267,7 @@ left: 20px; bottom: 10px;
 
 }
 
-.imagebox /*positionnement et recadrage des photos hebergments*/
+#hebergements .imagebox /*positionnement et recadrage des photos hebergments*/
 {
   background-size: cover;/*les photos sont des background de divs */
   background-position: center;
@@ -275,7 +275,7 @@ left: 20px; bottom: 10px;
   top: 10px; left: 5%;
   width: 90%;
   height: 150px;
-  border-radius: 5%;
+  border-radius: 5% 5% 0% 0%;
 
 }
 
@@ -348,11 +348,91 @@ width: 50%;
 {
 height: 90%;
 width: 40%;
+border-radius: 5% 0% 0% 5% ;
+align-self: center;
+margin-left: 5px;
+background-position: center;
+background-size: 180%;
 }
 
 #cadretrend i /* aligner les étoiles en bas de la box */
 {
 margin-top: 60px;
+}
+
+/* Style section Activité */
+#act
+{
+  height: 500px;
+  border: 3px solid red;
+}
+
+.cadreact
+{
+ 
+display: flex;
+justify-content: space-around;
+height: 87%;
+border: 3px solid blue;
 
 
 }
+
+.cadreactint
+{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  border: 3px solid green;
+  
+  
+
+}
+.cadreact .box
+{
+height: 100%;
+border: 3px solid blue;
+
+
+
+
+
+}
+
+.cadreact .bigbox
+{
+  height: 80%;
+  width: 100%;
+  
+  
+}
+
+.cadreact .box .imagebox
+{
+height: 50%;
+
+
+
+
+
+}
+
+.cadreact .bigbox .imagebox
+{
+
+height: 100%;
+
+
+}
+
+
+
+
+/* Style footer */
+
+footer
+{
+display: flex;
+}
+
