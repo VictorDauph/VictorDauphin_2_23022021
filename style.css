@@ -1,7 +1,17 @@
+
 @font-face {
-  font-family: "Raleway";
-  src: url("fonts/Raleway-VariableFont_wght.ttf") format("ttf"); /* /!\la police ne fonctionne pas convertir en woff... */
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v19-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/raleway-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v19-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
+
 
 /* couleurs à utiliser en hexa
     Bleu:           #0065FC
@@ -48,6 +58,8 @@ header
 
 #Reservia
 {width:70%;/* on précise la largeur pour positionnement subheader */
+  position:relative;
+  bottom: 13px;
 }
 #Reservia img /* Resize logo reservia*/
 {
@@ -69,7 +81,9 @@ nav /*disposition du texte menu de navigation */
 nav a:hover /* couleur Hover du menu de navigation */
 {
   color: #0065FC;
+  
 }
+
 
 header span /* gras et couleur 's'inscrire' */
 {
@@ -142,13 +156,7 @@ align-items: center;
 
 
 
-#hebergements .box /* mise en forme des boxes hebergements */
-{
-width: 33%;
-height: 50%;
-display : block;
-background-color: white;
-}
+
 
 
 
@@ -167,27 +175,39 @@ display: flex;
 
 }
 
+
+
+
 .bouton
 {
-  width:fit-content;
+  width:max-content;
 
 display: flex;
 align-items: center;
 height: 3em;
 margin-left: 2%;
 border: 3px solid #F2F2F2 ;
-border-radius: 30% / 90%;
+border-radius: 50px; /* en valeur absolue pour un rendu plus homogène */
 border-left: white;
 font-size: 1.2em;
-
 }
 
-.bouton i /* placement icônes bouton */
+.bouton:hover /* style hover des boutons filtres */
+{
+  background-color: #DEEBFF;
+  
+}
+
+.bouton i /* placement icônes bouton et bordure */
 {
   align-self: center;
+  text-align: center;
   padding: 1em;
   background-color: #F2F2F2;
-  border-radius: 80%;
+  height: 26px;
+  width: 26px;
+  border-radius: 35px;
+  position: relative; top: 0.5px;
 }
 
 .bouton p /* style texte boutons */
@@ -220,13 +240,13 @@ justify-content: space-between;
 
 /* Style section hébergements */
 
-#hebergements
+#hebergements /* /!\ Comment on fait si on eut rajouter une carte pour que la zone s'agrandisse d'elle-même? */
 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #F2F2F2;
-  border-radius: 3%;
+  border-radius: 20px;
   width: 66%;
 }
 
@@ -255,6 +275,12 @@ border-radius: 5%;
 margin: 0px 0 2% 2%;
 }
 
+#hebergements .box:hover /*effet hover des box hebergements */
+{
+  background-color: #DEEBFF;
+
+}
+
 #hebergements .box h3, #hebergements .box p /*marge des textes dans les box */
 {
   margin-left: 20px;
@@ -269,8 +295,8 @@ left: 20px; bottom: 10px;
 
 #hebergements .imagebox /*positionnement et recadrage des photos hebergments*/
 {
-  background-size: cover;/*les photos sont des background de divs */
-  background-position: center;
+  
+  object-fit: cover; /* la propriété qui évite la déformation de l'image. */
   position: relative;
   top: 10px; left: 5%;
   width: 90%;
@@ -298,7 +324,7 @@ font-weight: bold;
 {
 
 background-color: #F2F2F2;
-border-radius: 3%;
+border-radius: 20px;
 padding: 1%;
 width: 25%;
 height: fit-content
@@ -337,28 +363,32 @@ border-radius: 5%;
 margin: 10px 0 2% 2%;
 }
 
+#trend .box:hover /*effet hover des box hebergements */
+{
+  background-color: #DEEBFF;
+
+}
+
 .boxcontent
 {
+  display: flex;
+  flex-direction: column;
 width: 50%;
-
+height: 200px;
 
 }
 
 #trend .imagebox /*taille des images des box trend*/
 {
-height: 90%;
+object-fit:cover; /* la propriété qui évite la déformation de l'image. */
+height: 180px;
 width: 40%;
 border-radius: 5% 0% 0% 5% ;
 align-self: center;
 margin-left: 5px;
-background-position: center;
-background-size: 180%;
+
 }
 
-#cadretrend i /* aligner les étoiles en bas de la box */
-{
-margin-top: 60px;
-}
 
 /* Style section Activité */
 #act
@@ -393,23 +423,22 @@ border: 3px solid blue;
 {
 height: 100%;
 border: 3px solid blue;
-
-
-
-
-
 }
 
 .cadreact .bigbox
 {
   height: 80%;
   width: 100%;
-  
-  
 }
 
+.cadreact .box:hover ,.cadreact .bigbox:hover  /*effet hover des box activités */
+{
+  background-color: #DEEBFF;
+
+}
 .cadreact .box .imagebox
 {
+  object-fit: cover;  /* la propriété qui évite la déformation de l'image. */
 height: 50%;
 
 
@@ -420,7 +449,7 @@ height: 50%;
 
 .cadreact .bigbox .imagebox
 {
-
+  object-fit: cover; /* la propriété qui évite la déformation de l'image. */
 height: 100%;
 
 
