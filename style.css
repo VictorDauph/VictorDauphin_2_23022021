@@ -16,7 +16,8 @@
 /* couleurs à utiliser en hexa
     Bleu:           #0065FC
     Bleu clair:     #DEEBFF
-    Gris:           #F2F2F2 */
+    Gris:           #F2F2F2
+    Gris shadow:    #c2c2c2 */
 
 body 
 {
@@ -70,7 +71,7 @@ header
 
 
 nav /*disposition du texte menu de navigation */
-/* /!\ les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page. */
+/* les liens “Hébergements” et “Activités” sont des ancres qui mènent aux sections de la page. */
 {
   display: flex;
   justify-content: space-around ;
@@ -78,7 +79,7 @@ nav /*disposition du texte menu de navigation */
 
 }
 
-nav a:hover /* couleur Hover du menu de navigation */
+a:hover /* couleur Hover de tous les liens de la page */
 {
   color: #0065FC;
   
@@ -113,7 +114,7 @@ margin-top: 0;
 
 #zonerecherche /* style de la zone d'entrée du filtre: zonerecherche*/ 
 
-/* /!\ Les filtres doivent changer d'apparence au survol! /!\*/
+
 { 
   font-size: 1.4em;
   display: flex;
@@ -240,7 +241,7 @@ justify-content: space-between;
 
 /* Style section hébergements */
 
-#hebergements /* /!\ Comment on fait si on eut rajouter une carte pour que la zone s'agrandisse d'elle-même? */
+#hebergements /* /!\ Comment on fait si on peut rajouter une carte pour que la zone s'agrandisse d'elle-même? Faire des tests sur une autre branche*/
 {
   display: flex;
   flex-direction: column;
@@ -271,8 +272,9 @@ margin: 2%;
 
 background-color: white;
 width: 30%;
-border-radius: 5%;
+border-radius: 20px;
 margin: 0px 0 2% 2%;
+box-shadow: 0px 15px 5px #c2c2c2;
 }
 
 #hebergements .box:hover /*effet hover des box hebergements */
@@ -301,7 +303,7 @@ left: 20px; bottom: 10px;
   top: 10px; left: 5%;
   width: 90%;
   height: 150px;
-  border-radius: 5% 5% 0% 0%;
+  border-radius: 20px 20px 0% 0%;
 
 }
 
@@ -316,6 +318,11 @@ font-size: 1.5em;
 font-weight: bold;
 
 
+}
+
+#afficher a:hover
+{
+color: #0065FC;
 }
 
 /* Style section Trend */
@@ -357,10 +364,11 @@ height: 100%;
 {
 display: flex;
 justify-content: space-between;
-height: 28%;
+height: fit-content;
 background-color: white;
-border-radius: 5%;
+border-radius: 20px;
 margin: 10px 0 2% 2%;
+box-shadow: 0px 15px 5px #c2c2c2;
 }
 
 #trend .box:hover /*effet hover des box hebergements */
@@ -374,16 +382,17 @@ margin: 10px 0 2% 2%;
   display: flex;
   flex-direction: column;
 width: 50%;
-height: 200px;
+height: fit-content;
+margin-bottom: 10px;
 
 }
 
 #trend .imagebox /*taille des images des box trend*/
 {
 object-fit:cover; /* la propriété qui évite la déformation de l'image. */
-height: 180px;
+height: 160px;
 width: 40%;
-border-radius: 5% 0% 0% 5% ;
+border-radius: 20px 0% 0% 20px ;
 align-self: center;
 margin-left: 5px;
 
@@ -391,44 +400,36 @@ margin-left: 5px;
 
 
 /* Style section Activité */
-#act
-{
-  height: 500px;
-  border: 3px solid red;
-}
+
 
 .cadreact
 {
  
 display: flex;
-justify-content: space-around;
-height: 87%;
-border: 3px solid blue;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: space-between;
+height: 500px;
 
 
-}
-
-.cadreactint
-{
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  height: 100%;
-  border: 3px solid green;
-  
-  
 
 }
+
+
 .cadreact .box
 {
-height: 100%;
-border: 3px solid blue;
+width: 22% ;
+height: 45%;
+box-shadow: 0px 15px 5px #c2c2c2;
+border-radius: 20px;
 }
 
 .cadreact .bigbox
 {
-  height: 80%;
-  width: 100%;
+  width: 22% ;
+  height: 100%;
+  box-shadow: 0px 15px 5px #c2c2c2;
+  border-radius: 20px;
 }
 
 .cadreact .box:hover ,.cadreact .bigbox:hover  /*effet hover des box activités */
@@ -436,25 +437,28 @@ border: 3px solid blue;
   background-color: #DEEBFF;
 
 }
-.cadreact .box .imagebox
+.cadreact .imagebox /* les styles des images box sont gérés par le même code CSS */
 {
   object-fit: cover;  /* la propriété qui évite la déformation de l'image. */
-height: 50%;
-
-
-
-
-
+width: 100%;
+border-radius: 20px 20px 0 0;
 }
 
-.cadreact .bigbox .imagebox
+.cadreact .box .imagebox /* hauteur photos box */
 {
-  object-fit: cover; /* la propriété qui évite la déformation de l'image. */
-height: 100%;
-
-
+height: 70%;
 }
 
+.cadreact .bigbox .imagebox /* hauteur photos bigbox */
+{
+height: 85%;
+}
+
+.cadreact h3
+{
+margin-left: 5%;
+
+}
 
 
 
@@ -462,6 +466,19 @@ height: 100%;
 
 footer
 {
-display: flex;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color:#F2F2F2;
 }
+
+.footerbox
+{
+width: 33%;
+margin-left: 3%;
+
+
+}
+
+
 
