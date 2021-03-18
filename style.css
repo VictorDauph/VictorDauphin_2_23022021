@@ -19,6 +19,14 @@
     Gris:           #F2F2F2
     Gris shadow:    #c2c2c2 */
 
+/* breakpoints mediaqueries
+    >767px mobile
+    1023px < 768px tablettes
+    1024px < desktop */
+    
+
+    /* style général de la page */
+
 body 
 {
   font-family: "Raleway", sans-serif;  /*application de la police raleway à tout le document */
@@ -26,13 +34,13 @@ body
   
 }
 
-p,a
+p,a /* police textes */
 {
   font-size: 1.1em;
 }
 
 
-h1,h2 /* taille des titres*/
+h1,h2 /* police titres*/
 {
  font-size: 1.4em;
 }
@@ -42,10 +50,11 @@ a /* les liens sont non-soulignés et noirs par défaut */
   color: black;  
 }
 
-i /* Toutes les icônes sont en bleu (exception icône GPS) */
+i /* Toutes les icônes sont en bleu par défaut */
 {
 color: #0065FC;
 }
+
 
 /* style header */
 
@@ -59,7 +68,7 @@ header
 
 #Reservia
 {width:70%;/* on précise la largeur pour positionnement subheader */
-  position:relative;
+  position:relative; /* Compenser le décalage dû aux blancs dans le logo */
   bottom: 13px;
 }
 #Reservia img /* Resize logo reservia*/
@@ -107,6 +116,33 @@ font-weight: bold;
 margin-bottom: 1px;
 margin-top: 0;
 }
+
+/* design header tablette */
+
+@media (min-width:768px) and (max-width:1023px)
+{
+  #Reservia {
+    width: 50%;}
+
+  nav {
+    width: 30%;
+    justify-content: space-between;
+  }
+
+
+
+
+}
+/* design header mobile */
+@media (max-width:767px)
+{
+  body{ color: red;
+    
+  
+  }
+
+}
+
 
 /* style zone de recherche subheader */
 
@@ -156,6 +192,9 @@ align-items: center;
 }
 
 
+
+
+/* design subheader mobile */
 
 
 
@@ -231,11 +270,68 @@ margin-left: 0.5em;
 
 }
 
+/* design filtres tablette */
+
+@media (min-width:768px) and (max-width:1023px)
+{
+
+  #filtrespicto div /*Mettre le titre filtres sur une ligne */
+  {
+    width: 100%;
+
+  }
+  #filtrespicto  /*Retour à la ligne filtres */
+  {
+      flex-wrap: wrap;
+  }
+
+  #filtrespicto a
+  { min-width: 35%;
+    margin-bottom: 20px;
+
+
+  }
+
+
+}
+/* design filtres mobile */
+@media (max-width:767px)
+{
+  body
+  {
+    color: red;
+    
+  
+  }
+}
+
+  /* Disposition corps de page */
+
 #corps /* flexer la div qui gère le corps de la page */
 {
 display: flex;
 justify-content: space-between;
 
+
+}
+
+
+/* disposition corps tablette */
+
+@media (min-width:768px) and (max-width:1023px)
+{
+  #corps { flex-direction: column;}
+    
+    
+  
+}
+/* disposition corps mobile */
+@media (max-width:767px)
+{
+  #corps { flex-direction: column;}
+    
+  
+  
 
 }
 
@@ -307,6 +403,34 @@ left: 20px; bottom: 10px;
 
 }
 
+/* design hebergements tablette */
+
+@media (min-width:768px) and (max-width:1023px)
+{
+   #hebergements
+   {
+     order: 2;
+     width: 102%;
+     margin-top: 20px;
+    }
+
+    #hebergements .box
+    {
+      width: 45%;
+
+    }
+}
+/* design hebergements mobile */
+@media (max-width:767px)
+{
+  #hebergements{
+    order: 2;
+    width: 100%;
+    
+  
+  }
+}
+/* bouton afficher */
 #afficher
 {
  margin: 0 0 1em 5em ;
@@ -398,6 +522,39 @@ margin-left: 5px;
 
 }
 
+/* design trend tablette */
+
+@media (min-width:768px) and (max-width:1023px)
+{
+
+  #trend 
+  {
+    order: 1;
+    width: 100%;
+  }
+  #cadretrend
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #cadretrend .box
+  {
+    width: 45%;
+
+
+  }
+}
+/* design trend mobile */
+@media (max-width:767px)
+{
+  #trend 
+  {
+  order: 1;
+  width: 100%;
+  }
+  
+}
 
 /* Style section Activité */
 
@@ -460,6 +617,44 @@ margin-left: 5%;
 
 }
 
+/* design Activités tablette */
+
+@media (min-width:768px) and (max-width:1023px)
+{
+  .cadreact /* changement direction flex cadreact */
+  {
+    flex-direction: row;
+  height: auto;
+  
+  }
+  .cadreact .box, .cadreact .bigbox
+  {
+    width: 45%;
+    height: 250px;
+    margin-bottom: 20px;
+    
+    
+  }
+
+  .cadreact .box .imagebox, .cadreact .bigbox .imagebox
+  {
+    height: 70%;
+
+
+
+  }
+  
+
+
+
+}
+/* design Activités mobile */
+@media (max-width:767px)
+{
+  body{color: red;}
+    
+  
+  }
 
 
 /* Style footer */
@@ -480,5 +675,19 @@ margin-left: 3%;
 
 }
 
+/* design footer tablette */
 
-
+@media (min-width:768px) and (max-width:1023px)
+{
+  body {
+    
+    
+  }
+}
+/* design footer mobile */
+@media (max-width:767px)
+{
+  body{color: red;}
+    
+  
+  }
