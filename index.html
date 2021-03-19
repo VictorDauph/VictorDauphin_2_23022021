@@ -9,23 +9,25 @@
     <body>
 
         <header>
-            <div id="Reservia"> <img src="images/logo/Reservia.svg" alt="logo Reservia"></div>
-            <nav><a href="#hebergements"> Hébergements</a> <a href="#act"> Activités</a>  </nav> <!-- Propriété Hover en CSS-->
-            <div> <a href="#"> <span>S'inscrire</span></a> </div>
-
-            <div id="subheader">
-                <div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </div>
-                <form id="zonerecherche" method="POST" action="">
-                    <!-- icône GPS-->
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Marseille, France">
-                    <a href="#""> Rechercher</a> <!--Rechercher est transformé en bouton dans le CSS-->
-
-                </form>
+            <div id="flexmenu">
+                <div id="Reservia"> <img src="images/logo/Reservia.svg" alt="logo Reservia"></div>
+                <nav><a href="#hebergements"> Hébergements</a> <a href="#act"> Activités</a>  </nav> <!-- Propriété Hover en CSS-->
+                <div id="inscription"> <a href="#"> <span>S'inscrire</span></a> </div>
             </div>
+
+                <div id="subheader">
+                    <div>
+                        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                        <p>En plein centre ville ou en pleine nature</p>
+                    </div>
+                    <form id="zonerecherche" method="POST" action="">
+                        <!-- icône GPS-->
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Marseille, France">
+                        <a href="#""> <p id="rechercher">Rechercher</p> <span><i class="fas fa-search"></i></span> </a><!--Rechercher est transformé en bouton dans le CSS la loupe est cachée quand Rechercher est affiché-->
+
+                    </form>
+                </div>
         </header>
 
         <section id="filtres"> <!-- Flexboxer en colonnes-->
