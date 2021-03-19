@@ -68,8 +68,8 @@ header
 
 #Reservia
 {width:70%;/* on précise la largeur pour positionnement subheader */
-  position:relative; /* Compenser le décalage dû aux blancs dans le logo */
-  bottom: 13px;
+  position: relative; top: 25px;
+  
 }
 #Reservia img /* Resize logo reservia*/
 {
@@ -82,7 +82,9 @@ header
   display: flex;
   justify-content: space-between;
   width: 100%;
-
+ 
+  height: 100%;
+  
 }
 
 
@@ -91,7 +93,27 @@ nav /*disposition du texte menu de navigation */
 {
   display: flex;
   justify-content: space-around ;
-  width: 20%; /* on précise la largeur pour positionnement subheader */
+  width: 350px; /* on précise la largeur pour positionnement subheader */
+  align-items: flex-end;
+
+}
+
+nav a
+{
+width:150px;
+
+}
+
+#inscription
+{
+display: flex;
+align-items: flex-end;
+
+}
+
+#inscription :hover
+{
+  border-top: 3px solid #0065FC;
 
 }
 
@@ -132,8 +154,8 @@ margin-top: 0;
     width: 50%;}
 
   nav {
-    width: 30%;
-    justify-content: space-between;
+    width: 350px;
+    justify-content: space-around;
   }
 
 
@@ -789,8 +811,11 @@ footer
 {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin:30px 0 0 0;
   background-color:#F2F2F2;
+  width: 110%;
+  position: relative; right: 3%;
+
 }
 
 .footerbox
