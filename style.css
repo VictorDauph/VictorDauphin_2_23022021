@@ -171,6 +171,7 @@ margin-top: 0;
   {
   order: 1;
   }
+
   #flexmenu
   {
     flex-wrap: wrap;
@@ -453,7 +454,7 @@ justify-content: space-between;
 
 /* Style section hébergements */
 
-#hebergements /* /!\ Comment on fait si on peut rajouter une carte pour que la zone s'agrandisse d'elle-même? Faire des tests sur une autre branche*/
+#hebergements /* on peut rajouter une carte pour que la zone s'agrandisse d'elle-même*/
 {
   display: flex;
   flex-direction: column;
