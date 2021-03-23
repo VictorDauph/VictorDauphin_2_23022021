@@ -30,7 +30,7 @@
 body 
 {
   font-family: "Raleway", sans-serif;  /*application de la police raleway à tout le document */
-  margin: 3%;
+  margin: 0 3% 0 3%;
   
 }
 
@@ -68,7 +68,7 @@ header
 
 #Reservia
 {width:70%;/* on précise la largeur pour positionnement subheader */
-  position: relative; top: 25px;
+  position: relative; top: 35px;
   
 }
 #Reservia img /* Resize logo reservia*/
@@ -77,7 +77,7 @@ header
 
 }
 
-#flexmenu
+#flexmenu /* conteneur flexé de la première ligne de la page disposition des différents éléments*/
 {
   display: flex;
   justify-content: space-between;
@@ -94,28 +94,27 @@ nav /*disposition du texte menu de navigation */
   display: flex;
   justify-content: space-around ;
   width: 350px; /* on précise la largeur pour positionnement subheader */
+  
+
+}
+
+
+
+.navbox /* Mise en forme des différentes cases du menu*/
+{
+  height: 66px;
+  display: flex;
   align-items: flex-end;
+  border-top: 3px solid white;
 
 }
-
-nav a
+.navbox:hover /*bordure bleu top sur hover des liens du menu */
 {
-width:150px;
+border-top: 3px solid #0065FC;
 
 }
 
-#inscription
-{
-display: flex;
-align-items: flex-end;
 
-}
-
-#inscription :hover
-{
-  border-top: 3px solid #0065FC;
-
-}
 
 a:hover /* couleur Hover de tous les liens de la page */
 {
@@ -135,8 +134,8 @@ font-weight: bold;
 #subheader /* largeur box subheader et margin */
 {
   width: 100%;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 50px;
+  margin-bottom: 20px;
   
 }
 
@@ -175,7 +174,7 @@ margin-top: 0;
   #flexmenu
   {
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
     
 
   }
@@ -183,7 +182,29 @@ margin-top: 0;
   {
     width: 100%;
     justify-content: space-between;
-    padding: 0 50px 0 50px;
+    
+
+  }
+
+ 
+
+  nav .navbox /* positionnement des box du menu de navigation */
+  {
+    
+    margin-top: 40px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #F2F2F2;
+  }
+
+  nav .navbox:hover
+  {
+    border-top:none;
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
+    
 
   }
 
@@ -249,6 +270,11 @@ align-items: center;
 
 @media (max-width:767px)
 {
+  #subheader
+  {
+    margin-top: 20px;
+  }
+
   #subheader h1 /* marges Titre */
   {
   margin-bottom: 20px;
@@ -580,7 +606,7 @@ height: 100%;
 }
 
 
-#trendtitle
+#trendtitle /*positionnement titre trend */
 {
   display: flex;
   align-items: center;
