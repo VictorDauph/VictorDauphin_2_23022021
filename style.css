@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -11,7 +10,6 @@
        url('../fonts/raleway-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/raleway-v19-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
 }
-
 
 /* couleurs à utiliser en hexa
     Bleu:           #0065FC
@@ -30,8 +28,7 @@
 body 
 {
   font-family: "Raleway", sans-serif;  /*application de la police raleway à tout le document */
-  margin: 0 3% 0 3%;
-  
+  margin: 0 3% 0 3%; 
 }
 
 p,a /* police textes */
@@ -39,11 +36,11 @@ p,a /* police textes */
   font-size: 1.1em;
 }
 
-
 h1,h2 /* police titres*/
 {
  font-size: 1.4em;
 }
+
 a /* les liens sont non-soulignés et noirs par défaut */
 {
   text-decoration:none; 
@@ -52,10 +49,10 @@ a /* les liens sont non-soulignés et noirs par défaut */
 
 i /* Toutes les icônes sont en bleu par défaut */
 {
-color: #0065FC;
+  color: #0065FC;
 }
 
-
+/* Version desktop (par défaut)*/
 /* style header */
 
 header
@@ -63,18 +60,17 @@ header
   display:flex;
   flex-wrap: wrap; /* effectue le retour à la ligne pour le block subheader */
   justify-content: space-between;
-
 }
 
 #Reservia
-{width:70%;/* on précise la largeur pour positionnement subheader */
+{
+  width:70%;/* on précise la largeur pour positionnement subheader */
   position: relative; top: 35px;
-  
 }
+
 #Reservia img /* Resize logo reservia*/
 {
   width: 120px;
-
 }
 
 #flexmenu /* conteneur flexé de la première ligne de la page disposition des différents éléments*/
@@ -82,11 +78,8 @@ header
   display: flex;
   justify-content: space-between;
   width: 100%;
- 
   height: 100%;
-  
 }
-
 
 nav /*disposition du texte menu de navigation */
 /* les liens “Hébergements” et “Activités” sont des ancres qui mènent aux sections de la page. */
@@ -94,11 +87,7 @@ nav /*disposition du texte menu de navigation */
   display: flex;
   justify-content: space-around ;
   width: 350px; /* on précise la largeur pour positionnement subheader */
-  
-
 }
-
-
 
 .navbox /* Mise en forme des différentes cases du menu*/
 {
@@ -106,29 +95,23 @@ nav /*disposition du texte menu de navigation */
   display: flex;
   align-items: flex-end;
   border-top: 3px solid white;
-
 }
+
 .navbox:hover /*bordure bleu top sur hover des liens du menu */
 {
-border-top: 3px solid #0065FC;
-
+  border-top: 3px solid #0065FC;
 }
-
-
 
 a:hover /* couleur Hover de tous les liens de la page */
 {
   color: #0065FC;
-  
 }
-
 
 header span /* gras et couleur 's'inscrire' */
 {
-width:10%; /* on précise la largeur pour positionnement subheader */
-color: #0065FC ;
-font-weight: bold;
-
+  width:10%; /* on précise la largeur pour positionnement subheader */
+  color: #0065FC ;
+  font-weight: bold;
 }
 
 #subheader /* largeur box subheader et margin */
@@ -136,212 +119,88 @@ font-weight: bold;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 20px;
-  
 }
 
 #subheader h1, #subheader p /* marges des textes subheader */
 {
-margin-bottom: 1px;
-margin-top: 0;
+  margin-bottom: 1px;
+  margin-top: 0;
 }
-
-/* design header tablette */
-
-@media (min-width:768px) and (max-width:1023px)
-{
-  #Reservia {
-    width: 50%;}
-
-  nav {
-    width: 350px;
-    justify-content: space-around;
-  }
-
-
-
-
-}
-/* design header mobile */
-@media (max-width:767px)
-{
-  nav{ 
-    order: 2;
-  }
-  #inscription
-  {
-  order: 1;
-  }
-
-  #flexmenu
-  {
-    flex-wrap: wrap;
-    padding-bottom: 20px;
-    
-
-  }
-  nav
-  {
-    width: 100%;
-    justify-content: space-between;
-    
-
-  }
-
- 
-
-  nav .navbox /* positionnement des box du menu de navigation */
-  {
-    
-    margin-top: 40px;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 3px solid #F2F2F2;
-  }
-
-  nav .navbox:hover
-  {
-    border-top:none;
-    border-bottom: 3px solid #0065FC;
-    color: #0065FC;
-    
-
-  }
-
-}
-
 
 /* style zone de recherche subheader */
 
-
-
 #zonerecherche /* style de la zone d'entrée du filtre: zonerecherche*/ 
-
-
 { 
   font-size: 1.4em;
   display: flex;
   margin-top: 1em;
   height: 50px;
-  
 }
 
 #zonerecherche i /* couleur et taille de l'icône GPS */
 {
-color: black;
-background-color: #F2F2F2;
-border-radius: 30% 0 0 30%;
-width: 1.5em;
-display: flex;
-align-items: center;
-padding-left: 1em;
-
+  color: black;
+  background-color: #F2F2F2;
+  border-radius: 30% 0 0 30%;
+  width: 1.5em;
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
 }
 
 #zonerecherche span i /*faire disparaître la loupe hors de la version mobile */
 {
-display:none;
+  display:none;
 }
 
 #zonerecherche input /* style formulaire */
 {
-width: 250px ;
-border: 3px solid #F2F2F2;
-font-size: 0.8em;
+  width: 250px ;
+  border: 3px solid #F2F2F2;
+  font-size: 0.8em;
 }
 
 #zonerecherche a /*style bouton rechercher*/ 
 {
-background-color: #0065FC;
-border-radius: 0px 20px 20px 0px ;
-width: 7em;
-padding-left: 1em;
-color: #F2F2F2;
-font-size: 1em;
-display: flex;
-align-items: center;
-
+  background-color: #0065FC;
+  border-radius: 0px 20px 20px 0px ;
+  width: 7em;
+  padding-left: 1em;
+  color: #F2F2F2;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
 }
-
-
-
-
-/* design subheader mobile */
-
-@media (max-width:767px)
-{
-  #subheader
-  {
-    margin-top: 20px;
-  }
-
-  #subheader h1 /* marges Titre */
-  {
-  margin-bottom: 20px;
-  }
-
-  #zonerecherche span i /* faire apparaitre la loupe du bouton rechercher */
-  {
-    display: initial;
-    background-color: #0065FC;
-    color: #F2F2F2;
-  }
-
-  #zonerecherche a
-  {
-    width: 3em;
-    padding: 0;
-
-  }
-
-  #rechercher /*faire apparaître la mentiont "rechercher" du bouton de recherche */
-  {
-    display: none;
-
-  }
-
-}
-
-
-
 
 /* style section filtres */
 
 #filtres
 {
-display:flex;
-flex-direction:column ;
-
+  display:flex;
+  flex-direction:column ;
 }
 
 #filtrespicto
 {
-display: flex;
-
+  display: flex;
 }
-
-
-
 
 .bouton
 {
   width:max-content;
-
-display: flex;
-align-items: center;
-height: 3em;
-margin-left: 2%;
-border: 3px solid #F2F2F2 ;
-border-radius: 50px; /* en valeur absolue pour un rendu plus homogène */
-border-left: white;
-font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  height: 3em;
+  margin-left: 2%;
+  border: 3px solid #F2F2F2 ;
+  border-radius: 50px; /* en valeur absolue pour un rendu plus homogène */
+  border-left: white;
+  font-size: 1.2em;
 }
 
 .bouton:hover /* style hover des boutons filtres */
 {
   background-color: #DEEBFF;
-  
 }
 
 .bouton i /* placement icônes bouton et bordure */
@@ -358,98 +217,28 @@ font-size: 1.2em;
 
 .bouton p /* style texte boutons */
 {
-padding: 0em 1em 0em 1em;
-
-font-weight: bold;
+  padding: 0em 1em 0em 1em;
+  font-weight: bold;
 }
 
 #filtresinfo /*postionnement des éléments sur la zone info des filtres*/
-{
- 
-display: flex;
-align-items: center;
+{ 
+  display: flex;
+  align-items: center;
 }
 
 #filtresinfo p /* espacement éléments filtresinfo */
 {
-margin-left: 0.5em;
-
+  margin-left: 0.5em;
 }
 
-/* design filtres tablette */
-
-@media (min-width:768px) and (max-width:1023px)
-{
-
-  #filtrespicto div /*Mettre le titre filtres sur une ligne */
-  {
-    width: 100%;
-
-  }
-  #filtrespicto  /*Retour à la ligne filtres */
-  {
-      flex-wrap: wrap;
-  }
-
-  #filtrespicto a
-  { min-width: 35%;
-    margin-bottom: 20px;
-
-
-  }
-
-
-}
-/* design filtres mobile */
-@media (max-width:767px)
-{
-  #filtrespicto div /*Mettre le titre filtres sur une ligne */
-  {
-    width: 100%;
-
-  }
-  #filtrespicto  /*Retour à la ligne filtres */
-  {
-      flex-wrap: wrap;
-  }
-
-  #filtresinfo,#filtrespicto
-  {
-    margin-bottom: 20px;
-
-
-  }
-  
-}
-
-  /* Disposition corps de page */
+/* Disposition corps de page */
 
 #corps /* flexer la div qui gère le corps de la page */
 {
 display: flex;
 justify-content: space-between;
-
-
-}
-
-
-/* disposition corps tablette */
-
-@media (min-width:768px) and (max-width:1023px)
-{
-  #corps { flex-direction: column;}
-    
-    
-  
-}
-/* disposition corps mobile */
-@media (max-width:767px)
-{
-  #corps { flex-direction: column;}
-    
-  
-  
-
+margin-top: 50px;
 }
 
 /* Style section hébergements */
@@ -467,7 +256,6 @@ justify-content: space-between;
 #hebergements h2
 {
 margin: 2% 0 0 5%;
-
 }
 
 #cadrebox /* disposition des boxes dans section hébergements */
@@ -476,13 +264,10 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
 margin: 2%;
-
-
 }
 
 #hebergements .box /* style et marges des box */
 {
-
 background-color: white;
 width: 30%;
 border-radius: 20px;
@@ -493,7 +278,6 @@ box-shadow: 0px 15px 5px #c2c2c2;
 #hebergements .box:hover /*effet hover des box hebergements */
 {
   background-color: #DEEBFF;
-
 }
 
 #hebergements .box h3, #hebergements .box p /*marge des textes dans les box */
@@ -505,114 +289,59 @@ box-shadow: 0px 15px 5px #c2c2c2;
 {
 position: relative; 
 left: 20px; bottom: 10px;
-
 }
 
 #hebergements .imagebox /*positionnement et recadrage des photos hebergments*/
 {
-  
   object-fit: cover; /* la propriété qui évite la déformation de l'image. */
   position: relative;
   top: 5px; left: 2.5%;
   width: 95%;
   height: 150px;
   border-radius: 20px 20px 0% 0%;
-
 }
 
-/* design hebergements tablette */
-
-@media (min-width:768px) and (max-width:1023px)
-{
-   #hebergements
-   {
-     order: 2;
-     width: 102%;
-     margin-top: 20px;
-    }
-
-    #hebergements .imagebox
-    {
-      width: 98%;
-      position: relative;
-      top: 5px; left: 1%;
-
-    }
-
-    #hebergements .box
-    {
-      width: 45%;
-
-    }
-}
-/* design hebergements mobile */
-@media (max-width:767px)
-{
-  #hebergements{
-    order: 2;
-    width: 100%;
-    background-color: white;
-    
-  }
-
-  #cadrebox
-  {
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 100px;
-  }
-  #hebergements .box
-  {
-    width: 100%;
-
-  }
-}
 /* bouton afficher */
+
 #afficher
 {
  margin: 0 0 1em 5em ;
-
 }
+
 #afficher a /*taille du lien "afficher plus" */
 {
-font-size: 1.5em;
-font-weight: bold;
-
-
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 #afficher a:hover
 {
-color: #0065FC;
+  color: #0065FC;
 }
 
 /* Style section Trend */
 
 #trend /* mise en forme de la section trend */
 {
-
-background-color: #F2F2F2;
-border-radius: 20px;
-padding: 1%;
-width: 25%;
-height: fit-content
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  padding: 1%;
+  width: 25%;
+  height: fit-content
 }
 
 #cadretrend /* les box doivent être dans une div flexboxée pour prendre forme correctement */
 {
-display: flex;
-flex-direction: column;
-height: 100%;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-
 
 #trendtitle /*positionnement titre trend */
 {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
- 
+  justify-content: space-between;  
 }
 
 #trendtitle i /* couleur et taille icône chart */
@@ -623,19 +352,18 @@ height: 100%;
 
 #trend .box /* style et marges des box section trend*/
 {
-display: flex;
-justify-content: space-between;
-height: 250px;
-background-color: white;
-border-radius: 20px;
-margin: 10px 0 2% 2%;
-box-shadow: 0px 15px 5px #c2c2c2;
+  display: flex;
+  justify-content: space-between;
+  height: 250px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px 0 2% 2%;
+  box-shadow: 0px 15px 5px #c2c2c2;
 }
 
 #trend .box:hover /*effet hover des box hebergements */
 {
   background-color: #DEEBFF;
-
 }
 
 .boxcontent
@@ -643,96 +371,48 @@ box-shadow: 0px 15px 5px #c2c2c2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-width: 50%;
-height: 100%;
-margin-bottom: 10px;
-
+  width: 50%;
+  height: 100%;
+  margin-bottom: 10px;
 }
 
 .trendstars
 {
-margin-bottom: 10px;
-
+  margin-bottom: 10px;
 }
 
 #trend .imagebox /*taille des images des box trend*/
 {
-object-fit:cover; /* la propriété qui évite la déformation de l'image. */
-height: 95%;
-width: 40%;
-border-radius: 20px 0% 0% 20px ;
-align-self: center;
-margin-left: 5px;
-
-}
-
-/* design trend tablette */
-
-@media (min-width:768px) and (max-width:1023px)
-{
-
-  #trend 
-  {
-    order: 1;
-    width: 100%;
-  }
-  #cadretrend
-  {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  #cadretrend .box
-  {
-    width: 45%;
-
-
-  }
-  #trendtitle
-  {
-    width: 40%;
-
-  }
-
-
-}
-/* design trend mobile */
-@media (max-width:767px)
-{
-  #trend 
-  {
-  order: 1;
-  width: 100%;
-  margin-bottom: 40px;
-  border-radius: 0;
-  padding: 20px 0 50px 0;
-  }
-  
+  object-fit:cover; /* la propriété qui évite la déformation de l'image. */
+  height: 95%;
+  width: 40%;
+  border-radius: 20px 0% 0% 20px ;
+  align-self: center;
+  margin-left: 5px;
 }
 
 /* Style section Activité */
 
-
-.cadreact
+#act
 {
- 
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-justify-content: space-between;
-height: 500px;
-
-
-
+  margin-top: 100px;
 }
 
+.cadreact
+{ 
+  display: flex;  
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 500px;
+}
 
 .cadreact .box
 {
-width: 22% ;
-height: 45%;
-box-shadow: 0px 15px 5px #c2c2c2;
-border-radius: 20px;
+  width: 22% ;
+  height: 45%;
+  box-shadow: 0px 15px 5px #c2c2c2;
+  border-radius: 20px;
 }
 
 .cadreact .bigbox
@@ -746,91 +426,29 @@ border-radius: 20px;
 .cadreact .box:hover ,.cadreact .bigbox:hover  /*effet hover des box activités */
 {
   background-color: #DEEBFF;
-
 }
+
 .cadreact .imagebox /* les styles des images box sont gérés par le même code CSS */
 {
   object-fit: cover;  /* la propriété qui évite la déformation de l'image. */
-width: 100%;
-border-radius: 20px 20px 0 0;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 .cadreact .box .imagebox /* hauteur photos box */
 {
-height: 70%;
+  height: 70%;
 }
 
 .cadreact .bigbox .imagebox /* hauteur photos bigbox */
 {
-height: 85%;
+  height: 85%;
 }
 
 .cadreact h3
 {
-margin-left: 5%;
-
+  margin-left: 5%;
 }
-
-/* design Activités tablette */
-
-@media (min-width:768px) and (max-width:1023px)
-{
-  .cadreact /* changement direction flex cadreact */
-  {
-    flex-direction: row;
-  height: auto;
-  
-  }
-  .cadreact .box, .cadreact .bigbox /* redimensionnement des box */
-  {
-    width: 45%;
-    height: 250px;
-    margin-bottom: 20px;
-    
-    
-  }
-
-  .cadreact .box .imagebox, .cadreact .bigbox .imagebox /*redimensionnement des images */
-  {
-    height: 70%;
-
-
-
-  }
-  
-
-
-
-}
-/* design Activités mobile */
-@media (max-width:767px)
-{
-  .cadreact /* changement direction flex cadreact */
-  {
-    flex-direction: row;
-  height: auto;
-  
-  }
-  .cadreact .box, .cadreact .bigbox /* redimensionnement des box */
-  {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 20px;
-    
-    
-  }
-
-  .cadreact .box .imagebox, .cadreact .bigbox .imagebox /*redimensionnement des images */
-  {
-    height: 70%;
-
-
-
-  }
-    
-  
-  }
-
 
 /* Style footer */
 
@@ -842,22 +460,279 @@ footer
   background-color:#F2F2F2;
   width: 110%;
   position: relative; right: 3%;
-
 }
 
 .footerbox
 {
 width: 33%;
 margin-left: 3%;
-
-
 }
 
+/*design responsive tablette*/
 
-/* design footer mobile */
+@media (min-width:768px) and (max-width:1023px)
+{
+  /* design header tablette */
+
+  #Reservia 
+  {
+    width: 50%;
+  }
+
+  nav 
+  {
+    width: 350px;
+    justify-content: space-around;
+  }
+
+  /* design filtres tablette */
+
+  #filtrespicto div /*Mettre le titre filtres sur une ligne */
+  {
+    width: 100%;
+  }
+
+  #filtrespicto  /*Retour à la ligne filtres */
+  {
+    flex-wrap: wrap;
+  }
+
+  #filtrespicto a
+  { 
+    min-width: 35%;
+    margin-bottom: 20px;
+  }
+
+  /* disposition corps tablette */
+
+  #corps 
+  { 
+    flex-direction: column;
+  }
+
+  /* design hebergements tablette */
+
+  #hebergements
+  {
+    order: 2;
+    width: 102%;
+    margin-top: 20px;
+  }
+
+  #hebergements .imagebox
+  {
+    width: 98%;
+    position: relative;
+    top: 5px; left: 1%;
+
+  }
+
+  #hebergements .box
+  {
+    width: 45%;
+
+  }
+
+  /* design trend tablette */
+
+  #trend 
+  {
+    order: 1;
+    width: 100%;
+  }
+
+  #cadretrend
+  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #cadretrend .box
+  {
+    width: 45%;
+  }
+
+  #trendtitle
+  {
+    width: 40%;
+  }
+
+  /* design Activités tablette */
+
+  .cadreact /* changement direction flex cadreact */
+  {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .cadreact .box, .cadreact .bigbox /* redimensionnement des box */
+  {
+    width: 45%;
+    height: 250px;
+    margin-bottom: 20px;  
+  }
+
+  .cadreact .box .imagebox, .cadreact .bigbox .imagebox /*redimensionnement des images */
+  {
+    height: 70%;
+  }
+}
+
+/*design responsive mobile*/
+
 @media (max-width:767px)
 {
- 
+  /* design header mobile */
+
+  nav
+  { 
+    order: 2;
+  }
+
+  #inscription
+  {
+  order: 1;
+  }
+
+  #flexmenu
+  {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  nav
+  {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  nav .navbox /* positionnement des box du menu de navigation */
+  {    
+    margin-top: 40px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #F2F2F2;
+  }
+
+  nav .navbox:hover
+  {
+    border-top:none;
+    border-bottom: 3px solid #0065FC;
+    color: #0065FC;
+  }
+
+  /* design subheader mobile */
+
+  #subheader
+  {
+    margin-top: 20px;
+  }
+
+  #subheader h1 /* marges Titre */
+  {
+    margin-bottom: 20px;
+  }
+
+  #zonerecherche span i /* faire apparaitre la loupe du bouton rechercher */
+  {
+    display: initial;
+    background-color: #0065FC;
+    color: #F2F2F2;
+  }
+
+  #zonerecherche a
+  {
+    width: 3em;
+    padding: 0;
+  }
+
+  #rechercher /*faire apparaître la mentiont "rechercher" du bouton de recherche */
+  {
+    display: none;
+  }
+
+
+  /* design filtres mobile */
+
+  #filtrespicto div /*Mettre le titre filtres sur une ligne */
+  {
+    width: 100%;
+  }
+
+  #filtrespicto  /*Retour à la ligne filtres */
+  {
+    flex-wrap: wrap;
+  }
+
+  #filtresinfo,#filtrespicto
+  {
+    margin-bottom: 20px;
+  }
+  
+  /* disposition corps mobile */
+
+  #corps 
+  { 
+    flex-direction: column;
+  }
+  
+  /* design hebergements mobile */
+
+  #hebergements
+  {
+    order: 2;
+    width: 100%;
+    background-color: white;  
+  }
+
+  #cadrebox
+  {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  #hebergements .box
+  {
+    width: 100%;
+  }
+
+  /* design trend mobile */
+
+  #trend 
+  {
+  order: 1;
+  width: 100%;
+  margin-bottom: 40px;
+  border-radius: 0;
+  padding: 20px 0 50px 0;
+  }
+  
+  /* design Activités mobile */
+
+  .cadreact /* changement direction flex cadreact */
+  {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .cadreact .box, .cadreact .bigbox /* redimensionnement des box */
+  {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;  
+  }
+
+  .cadreact .box .imagebox, .cadreact .bigbox .imagebox /*redimensionnement des images */
+  {
+    height: 70%;
+  }
+    
+  /* design footer mobile */
+
   footer
   {
   flex-direction: column;
@@ -866,6 +741,5 @@ margin-left: 3%;
   .footerbox
   {
     width: 100%;
-  }
-  
+  }  
 }
