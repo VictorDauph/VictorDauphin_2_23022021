@@ -65,7 +65,7 @@ header
 #Reservia
 {
   width:70%;/* on précise la largeur pour positionnement subheader */
-  position: relative; top: 35px;
+  position: relative; top: 20px;
 }
 
 #Reservia img /* Resize logo reservia*/
@@ -243,7 +243,7 @@ margin-top: 50px;
 
 /* Style section hébergements */
 
-#hebergements /* on peut rajouter une carte pour que la zone s'agrandisse d'elle-même*/
+#hebergements 
 {
   display: flex;
   flex-direction: column;
@@ -692,13 +692,22 @@ margin-left: 3%;
   {
     flex-direction: column;
     width: 100%;
-    margin-bottom: 100px;
+    margin: 0 0 40px 0;
   }
 
   #hebergements .box
   {
     width: 100%;
+    margin: 0 0 20px 0;
   }
+
+  #afficher
+  {
+    margin: 0 0 1em 1em;
+
+  }
+
+ 
 
   /* design trend mobile */
 

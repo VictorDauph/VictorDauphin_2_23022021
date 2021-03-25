@@ -15,16 +15,16 @@
                     <img src="images/logo/Reservia.svg" alt="logo Reservia">
                 </div>
                 <nav>
-                    <div class="navbox">
-                        <a href="#hebergements"> Hébergements</a> 
-                    </div> 
-                    <div class="navbox">
-                        <a href="#act"> Activités</a>
-                    </div>
+                    <a href="#hebergements" class="navbox">
+                        <p> Hébergements</p> 
+                    </a> 
+                    <a href="#act" class="navbox">
+                        <p> Activités</p>
+                    </a>
                 </nav> 
-                <div id="inscription" class="navbox"> 
-                    <a href="#"> <span>S'inscrire</span></a> 
-                </div>
+                <a href="#" id="inscription" class="navbox"> 
+                    <p>S'inscrire</p> 
+                </a>
             </div>
 
                 <div id="subheader">
@@ -32,11 +32,11 @@
                         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                         <p>En plein centre ville ou en pleine nature</p>
                     </div>
-                    <form id="zonerecherche" method="POST" action="">
+                    <form id="zonerecherche" method="POST" action="#">
                         <!-- icône GPS-->
                         <i class="fas fa-map-marker-alt"></i>
                         <input type="text" placeholder="Marseille, France">
-                        <a href="#""> 
+                        <a href="#"> 
                             <p id="rechercher">Rechercher</p> <span><i class="fas fa-search"></i></span> <!-- la loupe est cachée quand Rechercher est affiché et vice versa. La loupe est affichée uniquement dans la version mobile-->
                         </a>
                     </form>
@@ -76,42 +76,42 @@
                 <div><h2> Hébergements à Marseille</h2> </div>
                 <div id="cadrebox"> <!-- Cette div contient les 6 boxes hôtel... CSS-->
                     <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img class="imagebox" src="images/hebergements/4_small/cannebière.jpg" />
+                        <img class="imagebox" src="images/hebergements/4_small/cannebière.jpg" alt="Auberge Cannebière"/>
                         <h3> Auberge de la Cannebière</h3>
                         <p> Nuit à partir de <strong>25€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img class="imagebox" src="images/hebergements/4_small/hotelport.jpg" />
+                        <img class="imagebox" src="images/hebergements/4_small/hotelport.jpg" alt="Hôtel du port"/>
                         <h3> Hôtel du Port</h3>
                         <p> Nuit à partir de <strong>52€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                          <!-- star empty -->
                     </a>
                     <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img class="imagebox" src="images/hebergements/4_small/hotelmouettes.jpg" />
+                        <img class="imagebox" src="images/hebergements/4_small/hotelmouettes.jpg" alt="Hotel des mouettes" />
                         <h3> Hôtel Les Mouettes</h3>
                         <p> Nuit à partir de <strong>76€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img class="imagebox" src="images/hebergements/4_small/hotelmer.jpg" />
+                        <img class="imagebox" src="images/hebergements/4_small/hotelmer.jpg" alt="hôtel de la mer" />
                         <h3> Hôtel de la mer</h3>
                         <p> Nuit à partir de <strong>46€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i><i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img class="imagebox" src="images/hebergements/4_small/aubergepanier.jpg" />
+                        <img class="imagebox" src="images/hebergements/4_small/aubergepanier.jpg" alt="auberge du panier"/>
                         <h3> Auberge Le Panier</h3>
                         <p> Nuit à partir de <strong>23€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
                         <i class="far fa-star"></i> <!-- star empty -->
                     </a>
                     <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                        <img class="imagebox" src="images/hebergements/4_small/hotelamina.jpg" />
+                        <img class="imagebox" src="images/hebergements/4_small/hotelamina.jpg" alt="Hôtel Amina" />
                         <h3> Hôtel chez Amina</h3>
                         <p> Nuit à partir de <strong>96€</strong></p>
                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <!-- star full-->
@@ -126,7 +126,7 @@
                     </div>
                     <div id="cadretrend"> <!-- les box doivent obligatoirement se trouver dans une div flexboxée-->
                         <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                            <img class="imagebox" src="images/hebergements/4_small/soleilmatin.jpg" />
+                            <img class="imagebox" src="images/hebergements/4_small/soleilmatin.jpg" alt="Hôtel le soleil du matin" />
                             <div class="boxcontent">
                                 <h3> Hôtel Le soleil du matin </h3>
                                 <p> Nuit à partir de <strong>128€</strong></p>
@@ -136,7 +136,7 @@
                             </div>   
                         </a>
                         <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                            <img class="imagebox" src="images/hebergements/4_small/coeureau.jpg" />
+                            <img class="imagebox" src="images/hebergements/4_small/coeureau.jpg" alt="Chambre d'hôtes Au coeur de l'eau" />
                             <div class="boxcontent">
                                 <h3> Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p> Nuit à partir de <strong>71€</strong></p>
@@ -147,7 +147,7 @@
                             </div>
                         </a>
                         <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                            <img class="imagebox" src="images/hebergements/4_small/toutbleu.jpg" />
+                            <img class="imagebox" src="images/hebergements/4_small/toutbleu.jpg" alt="Hôtel tout bleu tout blanc" />
                             <div class="boxcontent">
                                 <h3> Hôtel Tout bleu et blanc</h3>
                                 <p> Nuit à partir de <strong>68€</strong></p>
@@ -165,27 +165,27 @@
             <h2> Activités à Marseille</h2>
             <div class="cadreact">                
                 <a href="#" class="bigbox"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                    <img class="imagebox" src="images/activites/4_small/VieuxPort.jpg" />
+                    <img class="imagebox" src="images/activites/4_small/VieuxPort.jpg" alt="vieux port" />
                     <h3> Vieux Port</h3>
                 </a>
                 <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                    <img class="imagebox" src="images/activites/4_small/FortPomegues.jpg" />
+                    <img class="imagebox" src="images/activites/4_small/FortPomegues.jpg" alt="Fort Pomègues"/>
                     <h3> Fort de Pomègues</h3>
                 </a>
-                <a href="#"" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                    <img class="imagebox" src="images/activites/4_small/IlesFrioul.jpg" />
+                <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
+                    <img class="imagebox" src="images/activites/4_small/IlesFrioul.jpg" alt="Îles du Frioul"/>
                     <h3> Iles du Frioul</h3>
                 </a>
                 <a href="#" class="bigbox"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                    <img class="imagebox" src="images/activites/4_small/Calanques.jpg" />
+                    <img class="imagebox" src="images/activites/4_small/Calanques.jpg" alt="Parc des Clanques"/>
                     <h3> Parc National des Calanques</h3>
                 </a>
                 <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                    <img class="imagebox" src="images/activites/4_small/DameGarde.jpg" />
+                    <img class="imagebox" src="images/activites/4_small/DameGarde.jpg" alt="Notre Dame de la Garde"/>
                     <h3> Notre-Dame-de-la-Garde</h3>
                 </a>
                 <a href="#" class="box"> <!-- les box sont des liens et non des div, car cela les rend entièrement clickables-->
-                    <img class="imagebox" src="images/activites/4_small/Longchamp.jpg" />
+                    <img class="imagebox" src="images/activites/4_small/Longchamp.jpg" alt="Parc Longchamp"/>
                     <h3> Parc Longchamp</h3>
                 </a>
             </div>
